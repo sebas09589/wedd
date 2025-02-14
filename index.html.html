@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sebastián GG - Marketing Digital</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+            color: #000;
+        }
+        header {
+            background: #000;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 26px;
+            font-weight: bold;
+        }
+        .nav {
+            display: flex;
+            justify-content: center;
+            background: #333;
+            padding: 10px 0;
+        }
+        .nav button {
+            background-color: #000;
+            color: #fff;
+            padding: 10px 20px;
+            font-size: 18px;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        .nav button:hover {
+            background-color: #444;
+        }
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 20px;
+        }
+        .section {
+            display: none;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            background-size: cover;
+            background-position: center;
+        }
+        .services {
+            background-image: url('https://source.unsplash.com/1200x600/?advertising,digital');
+        }
+        .marketing {
+            background-image: url('https://source.unsplash.com/1200x600/?socialmedia,technology');
+        }
+        .benefits {
+            background-image: url('https://source.unsplash.com/1200x600/?growth,analytics');
+        }
+        .contact {
+            background-image: url('https://source.unsplash.com/1200x600/?network,communication');
+        }
+        .about {
+            background-image: url('https://source.unsplash.com/1200x600/?business,entrepreneur');
+        }
+    </style>
+    <script>
+        function showSection(id) {
+            let sections = document.querySelectorAll('.section');
+            sections.forEach(section => section.style.display = 'none');
+            document.getElementById(id).style.display = 'block';
+        }
+    </script>
+</head>
+<body>
+    <header>
+        Sebastián GG - Especialista en Marketing Digital
+    </header>
+    <div class="nav">
+        <button onclick="showSection('about')">Sobre mí</button>
+        <button onclick="showSection('services')">Servicios</button>
+        <button onclick="showSection('marketing')">Marketing Digital</button>
+        <button onclick="showSection('benefits')">Beneficios</button>
+        <button onclick="showSection('contact')">Contacto</button>
+    </div>
+    <div class="container">
+        <div id="about" class="section about" style="display:block;">
+            <h2>Sobre mí</h2>
+            <p>Hola, soy Sebastián GG, un apasionado del Marketing Digital con más de 2 años de experiencia en ayudar a empresas a expandirse en el mundo digital. Mi misión es potenciar marcas y negocios con estrategias innovadoras y efectivas que realmente generan impacto.</p>
+            <p>Mi experiencia abarca diversas áreas clave, incluyendo:</p>
+            <ul>
+                <li>🎨 Diseño de logotipos y branding corporativo que resaltan tu identidad.</li>
+                <li>📢 Creación y gestión de anuncios publicitarios en redes sociales y Google.</li>
+                <li>🎬 Edición de videos profesionales para campañas impactantes.</li>
+                <li>💡 Desarrollo de contenido atractivo para mejorar la presencia online.</li>
+                <li>📊 Análisis de métricas y optimización de estrategias digitales.</li>
+            </ul>
+            <p>A lo largo de mi trayectoria, he logrado incrementar las ventas y la presencia digital de múltiples empresas, optimizando sus estrategias y ayudándolas a generar ingresos de manera eficiente.</p>
+            <p>Si buscas a alguien comprometido con tu éxito digital, estás en el lugar correcto. ¡Hagamos crecer tu negocio juntos!</p>
+        </div>
+        <div id="services" class="section services">
+            <h2>Servicios</h2>
+            <p>Ofrezco una variedad de servicios especializados en marketing digital:</p>
+            <ul>
+                <li>📊 Estrategias de publicidad pagada en Google Ads y Facebook Ads.</li>
+                <li>📢 Creación y optimización de campañas publicitarias efectivas.</li>
+                <li>🔍 Posicionamiento SEO para aumentar la visibilidad en motores de búsqueda.</li>
+                <li>📱 Gestión de redes sociales y creación de contenido estratégico.</li>
+                <li>🎬 Producción y edición de videos para mejorar la interacción con el público.</li>
+                <li>💻 Desarrollo de páginas web optimizadas para conversión.</li>
+                <li>📈 Análisis de métricas y reportes detallados para optimizar resultados.</li>
+            </ul>
+        </div>
+        <div id="marketing" class="section marketing">
+            <h2>¿Qué es el Marketing Digital?</h2>
+            <p>El marketing digital es el conjunto de estrategias enfocadas en promocionar productos y servicios a través de canales digitales...</p>
+            <p>El marketing digital es clave para cualquier negocio que desee crecer y adaptarse a la era digital. Con una estrategia bien estructurada, se pueden alcanzar grandes resultados en poco tiempo.</p>
+        </div>
+        <div id="benefits" class="section benefits">
+            <h2>Beneficios</h2>
+            <p>Mayor alcance, publicidad segmentada, resultados medibles, menor costo y más...</p>
+        </div>
+        <div id="contact" class="section contact">
+            <h2>Contacto</h2>
+            <p>¿Listo para hacer crecer tu negocio?</p>
+            <button onclick="window.location.href='https://wa.me/3173031628'">Contáctame</button>
+        </div>
+    </div>
+</body>
+</html>
